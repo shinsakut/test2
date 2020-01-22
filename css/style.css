@@ -1,0 +1,701 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  scroll-behavior: smooth;
+}
+
+p {
+  color: black;
+}
+
+#scroll-to-top {
+  position: fixed;
+  width: 150px;
+  height: 150px;
+  bottom: 3vh;
+  left: 1vw;
+  z-index: 50;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+#scroll-to-top img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+nav .top-header {
+  position: absolute;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #0f1114;
+  z-index: 10;
+}
+
+nav .top-header .top-header-theme {
+  color: white;
+  position: relative;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 42px;
+  position: relative;
+  top: 7%;
+}
+
+nav .top-header .top-header-logo {
+  width: 150px;
+  height: 200px;
+  position: absolute;
+  left: 3vw;
+  top: 5vh;
+}
+
+nav .top-header .top-header-stamp {
+  position: absolute;
+  top: 5vh;
+  right: 3vw;
+  width: 100px;
+  height: 150px;
+}
+
+.top {
+  position: relative;
+  padding-top: 60px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(#1f1f1b));
+  background: linear-gradient(to top, #000000 0%, #1f1f1b 100%);
+  width: 100%;
+  height: 750px;
+  z-index: 1;
+}
+
+.top .top-desk {
+  position: absolute;
+  margin: 28vh 0 0 24vw;
+}
+
+.top .me {
+  position: absolute;
+  bottom: 0;
+  margin: 38vh 0 0 38vw;
+}
+
+.top .sayings {
+  margin: 5vh 0 0 19vw;
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+.top .sayings .saying01 {
+  position: absolute;
+  top: 40px;
+  left: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top .sayings .saying01 p {
+  text-align: center;
+  font-size: 18px;
+  position: absolute;
+  width: 75%;
+  -webkit-transform: translate(10%, 0);
+          transform: translate(10%, 0);
+}
+
+.top .sayings .saying02 {
+  position: absolute;
+  top: 140px;
+  left: 720px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top .sayings .saying02 p {
+  text-align: center;
+  font-size: 18px;
+  position: absolute;
+  width: 80%;
+  -webkit-transform: translate(15%, -10%);
+          transform: translate(15%, -10%);
+}
+
+.top .sayings .saying03 {
+  position: absolute;
+  top: 320px;
+  left: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top .sayings .saying03 p {
+  text-align: center;
+  font-size: 18px;
+  position: absolute;
+  width: 80%;
+  -webkit-transform: translate(7%, -7%);
+          transform: translate(7%, -7%);
+}
+
+.top .sayings .saying04 {
+  position: absolute;
+  top: 360px;
+  left: 840px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top .sayings .saying04 p {
+  text-align: center;
+  font-size: 18px;
+  position: absolute;
+  width: 70%;
+  -webkit-transform: translate(30%, 0);
+          transform: translate(30%, 0);
+}
+
+.top .sayings .saying05 {
+  position: absolute;
+  top: 520px;
+  left: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top .sayings .saying05 p {
+  text-align: center;
+  font-size: 18px;
+  width: 70%;
+  position: absolute;
+  -webkit-transform: translate(10%, 0%);
+          transform: translate(10%, 0%);
+}
+
+.top .dust-wrap {
+  position: absolute;
+  height: 750px;
+  width: 1920px;
+}
+
+.top .dust-wrap .dust-foreground {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  -webkit-transform: translateX(-960px);
+          transform: translateX(-960px);
+}
+
+.top .dust-wrap .dust-background {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-960px);
+          transform: translateX(-960px);
+}
+
+.intro {
+  position: relative;
+  width: 100%;
+  background: #474747;
+  z-index: 10;
+}
+
+.intro .intro-header {
+  background: #0f1114;
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.253);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.253);
+}
+
+.intro .intro-header .intro-header-theme {
+  font-size: 32px;
+  font-family: "Bebas Neue";
+  color: white;
+  position: relative;
+  top: 10px;
+}
+
+.intro .intro-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../img/intro/mFP_intro_tilable_both.png");
+  background-color: #414141;
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+}
+
+.intro .intro-wrapper .intro-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.intro .intro-wrapper .intro-container .intro-container-left {
+  padding: 30px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro .intro-wrapper .intro-container .intro-container-left .intro-container-left-paragraph {
+  position: relative;
+  height: 235px;
+  width: 650px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro .intro-wrapper .intro-container .intro-container-left .intro-container-left-paragraph .intro-container-left-who-window {
+  opacity: 0;
+  position: absolute;
+  width: 550px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.intro .intro-wrapper .intro-container .intro-container-left .intro-container-left-paragraph img {
+  position: absolute;
+  top: -10px;
+  left: -5px;
+}
+
+.intro .intro-wrapper .intro-container .intro-container-left .intro-container-left-paragraph p {
+  font-family: 'Kosugi Maru',"Bebas Neue", "Kosugi";
+  line-height: 1.5em;
+  text-align: center;
+  font-size: 20px;
+  position: absolute;
+  margin-top: 5px;
+  z-index: 9;
+}
+
+.intro .intro-wrapper .intro-container .intro-container-left .intro-container-left-paragraph p span {
+  font-family: 'Kosugi Maru',"Bebas Neue", "Kosugi";
+  font-size: smaller;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.intro .intro-wrapper .intro-container .intro-container-left .intro-container-left-paragraph #intro-each-description {
+  opacity: 0;
+  position: absolute;
+  color: white;
+  font-family: 'Kosugi Maru',"Bebas Neue", "Kosugi";
+  font-size: 22px;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 80%;
+  -webkit-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+  z-index: 999;
+}
+
+.intro .intro-wrapper .intro-container .intro-container-left .intro-container-left-icons {
+  height: 120px;
+  width: 650px;
+  position: relative;
+  top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.intro .intro-wrapper .intro-container .intro-container-left .intro-container-left-icons #intro-container-left-icon-each {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.intro .intro-wrapper .intro-container .intro-container-left .intro-container-left-icons #intro-container-left-icon-each :hover {
+  -webkit-filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.3));
+  -webkit-transition: -webkit-filter 0.1s ease;
+  transition: -webkit-filter 0.1s ease;
+  transition: filter 0.1s ease;
+  transition: filter 0.1s ease, -webkit-filter 0.1s ease;
+}
+
+.intro .intro-wrapper .intro-container .intro-container-left .intro-container-left-icons .intro-container-left-who {
+  position: relative;
+}
+
+.intro .intro-wrapper .intro-container .intro-container-left .intro-container-left-icons .intro-container-left-who .intro-container-left-who-window {
+  position: absolute;
+  bottom: 150px;
+  width: 550px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.intro .intro-wrapper .intro-container .intro-container-right {
+  position: relative;
+  top: 0;
+}
+
+.intro .intro-wrapper .intro-container .intro-container-right .intro-container-right-portrait {
+  position: absolute;
+  top: 50px;
+  left: 35px;
+}
+
+.intro .intro-wrapper .intro-container .intro-container-right .intro-container-right-paragraph {
+  position: absolute;
+  bottom: 50px;
+  left: 84px;
+}
+
+.intro .intro-wrapper .intro-container .intro-container-right .intro-container-right-paragraph p {
+  font-family: 'Kosugi Maru',"Bebas Neue", "Kosugi";
+  font-size: 22px;
+  text-align: center;
+}
+
+.portfolio {
+  position: relative;
+}
+
+.portfolio .portfolio-header {
+  position: relative;
+  background: #0f1114;
+  height: 60px;
+  width: 100%;
+  z-index: 10;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.253);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.253);
+}
+
+.portfolio .portfolio-header .portfolio-header-theme {
+  color: white;
+  font-family: "Bebas Neue";
+  text-align: center;
+  font-size: 32px;
+  position: relative;
+  top: 12px;
+}
+
+.portfolio .portfolio-wrapper {
+  height: 1000px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1c212a), to(#060607));
+  background: linear-gradient(to bottom, #1c212a, #060607);
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.portfolio .portfolio-wrapper .portfolio-paragraph {
+  position: relative;
+  padding: 20px 0;
+  z-index: 10;
+}
+
+.portfolio .portfolio-wrapper .portfolio-paragraph p {
+  font-family: 'Kosugi Maru',"Bebas Neue", "Kosugi";
+  text-align: center;
+  position: absolute;
+  font-size: 18px;
+  top: 50px;
+  left: 65px;
+  line-height: 1.2rem;
+}
+
+.portfolio .portfolio-wrapper .portfolio-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  position: relative;
+  height: 900px;
+  width: 40%;
+  overflow: auto;
+  z-index: 10;
+}
+
+.portfolio .portfolio-wrapper .portfolio-content button {
+  margin: 5px 0 5px 0;
+  width: 203px;
+  height: 276px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.portfolio .portfolio-wrapper .portfolio-content button img {
+  position: relative;
+  top: 0px;
+  left: -5px;
+}
+
+.portfolio .portfolio-wrapper .portfolio-content button .portfolio-portfolio-image:hover {
+  -webkit-filter: brightness(150%);
+          filter: brightness(150%);
+  -webkit-transition: -webkit-filter 0.5s ease;
+  transition: -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease;
+  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
+}
+
+.portfolio .portfolio-wrapper .portfolio-content .modalArea-portfolio {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Kosugi Maru',"Bebas Neue", "Kosugi";
+}
+
+.portfolio .portfolio-wrapper .portfolio-content .modalArea-portfolio .modalBg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(30, 30, 30, 0.9);
+}
+
+.portfolio .portfolio-wrapper .portfolio-content .modalArea-portfolio .modalWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 500px;
+  padding: 10px 30px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 18px;
+  z-index: 9999;
+}
+
+.portfolio .portfolio-wrapper .portfolio-content .modalArea-portfolio .modalWrapper .modalContents h1 {
+  font-size: 22px;
+  padding: 0.4em 0;
+}
+
+.portfolio .portfolio-wrapper .portfolio-content .modalArea-portfolio .modalWrapper .modalContents p {
+  font-size: 18px;
+  padding: 1em 0;
+}
+
+.portfolio .portfolio-wrapper .portfolio-content .modalArea-portfolio .modalWrapper .modalContents .work-description {
+  font-weight: 500;
+  font-family: 'Kosugi', sans-serif;
+}
+
+.portfolio .portfolio-wrapper .portfolio-content .modalArea-portfolio .modalWrapper .modalContents .work-usedtool {
+  font-size: smaller;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.portfolio .portfolio-wrapper .portfolio-content .modalArea-portfolio .modalWrapper .modalContents .thumbnail-wrapper {
+  width: 250px;
+  height: 500px;
+  position: relative;
+  top: 75px;
+  float: left;
+}
+
+.portfolio .portfolio-wrapper .portfolio-content .modalArea-portfolio .modalWrapper .modalContents .thumbnail-wrapper .thumbnail {
+  background-color: red;
+  background-image: url(../img/works/mFP_works_portfolio_thumbnail.png);
+  background-size: cover;
+  margin: 1em;
+  width: 203px;
+  height: 276px;
+  float: left;
+}
+
+.portfolio .portfolio-wrapper .portfolio-content .modalArea-portfolio .closeModal {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.portfolio .portfolio-wrapper .portfolio-content .modalArea {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.portfolio .portfolio-wrapper .portfolio-content .modalArea .modalBg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(30, 30, 30, 0.9);
+}
+
+.portfolio .portfolio-wrapper .portfolio-content .modalArea .modalWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 500px;
+  padding: 10px 30px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 18px;
+  z-index: 9999;
+}
+
+.portfolio .portfolio-wrapper .portfolio-content .modalArea .modalWrapper .modalContents h1 {
+  font-size: 18px;
+}
+
+.portfolio .portfolio-wrapper .portfolio-content .modalArea .modalWrapper .modalContents p {
+  font-size: 18px;
+}
+
+.portfolio .portfolio-wrapper .portfolio-content .modalArea .closeModal {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.portfolio .portfolio-background {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  mix-blend-mode: darken;
+  z-index: 0;
+}
+
+.portfolio .portfolio-background .portfolio-backgound-floor {
+  height: 1000px;
+  height: 100%;
+  width: 100vw;
+}
+
+.footer {
+  position: relative;
+  background: #010102;
+  height: 200px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .footer-wrapper {
+  position: absolute;
+  top: 10%;
+  width: 50%;
+  height: 70%;
+}
+
+.footer .footer-wrapper .footer-content {
+  text-align: center;
+}
+
+.footer .footer-wrapper .footer-content p {
+  font-family: 'Kosugi Maru', sans-serif;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

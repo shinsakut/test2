@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kosugi&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ShinsakuT's Portfolio</title>
+</head>
+
+<body>
+
+  <div id="scroll-to-top" onclick="topFunction()">
+    <img src="img/logos/mFP_logos_home.png" alt="scroll-to-top">
+  </div>
+
+  <nav>
+
+    <div class="top-header">
+      <p class="top-header-theme">My First Portfolio</p>
+      <div class="top-header-logo">
+        <img src="img/logos/mFP_logos_logo.png" alt="logo">
+      </div>
+      <div class="top-header-stamp">
+        <img src="img/logos/mFP_logos_stamp.png" alt="stamp">
+      </div>
+    </div>
+
+  </nav>
+
+  <div class="top" id="scene">
+
+    <div class="dust-wrap">
+      <img src="img/desk/mFP_dust_back.png" class="dust-background" alt="dust_background" id="dust-each">
+    </div>
+
+    <div class="dust-wrap" data-depth=".1">
+      <img src="img/desk/mFP_dust_fore.png" class="dust-foreground" alt="dust-foreground" id="dust-each">
+    </div>
+
+
+    <div class="top-desk" data-depth=".2">
+      <img class="top-desk-img" src="img/desk/mFP_desk01.png" alt="image-desk">
+    </div>
+
+    <div class="me" data-depth=".5">
+      <div>
+        <img src="img/desk/mFP_me01.png" alt="me01">
+      </div>
+    </div>
+
+    <div class="sayings" data-depth=".6">
+
+      <div class="saying01">
+        <img class="saying01-image" id="sayings-each" src="img/desk/mFP_sayings01_01.png" alt="saying01">
+        <p>ようこそ。<br>
+          こちらは、ShinsakuTのポートフォリオサイトです。</p>
+
+      </div>
+
+      <div class="saying02">
+        <img class="saying02-image" src="img/desk/mFP_sayings01_02.png" alt="saying02">
+        <p>スクール等に通わず <br> 独学でコーディング、プログラミングを習得しています。</p>
+
+      </div>
+
+      <div class="saying03">
+        <img class="saying03-image" src="img/desk/mFP_sayings01_03.png" alt="saying03">
+        <p>このサイトの絵はすべて自作のものに<br>なります。 </p>
+
+      </div>
+
+      <div class="saying04">
+        <img class="saying04-image" src="img/desk/mFP_sayings01_04.png" alt="saying04">
+        <p>三十路を過ぎて、 <br> 転職の為に新しい技術を覚えようと四苦八苦している男です。<br>初心を忘れることなく毎日勉学に励んでおります。</p>
+
+
+      </div>
+
+      <div class="saying05">
+        <img class="saying05-image" src="img/desk/mFP_sayings01_05.png" alt="saying05">
+        <p>多少の海外経験があり、Udemy等の英語教材の内容を理解する程度の読解力はあります。<br> 当サイトもそこから得た技術で制作しました。</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="intro">
+
+    <div class="intro-header">
+      <p class="intro-header-theme">
+        introduction
+      </p>
+    </div>
+
+    <div class="intro-wrapper">
+
+      <div class="intro-container">
+
+        <div class="intro-container-left">
+
+          <div class="intro-container-left-paragraph">
+
+            <img src="img/intro/mFP_intro_para01.png" alt="intro-paragraph">
+            <p>専門学校卒業後、 都内3DCG制作スタジオに2年程度勤務。<br> 退職後、他業種派遣の仕事で生計を立てる。<br> 現在、転職のため独学でプログラミング学習中。 <br><span>
+                下のアイコンにカーソルをホバーで詳細を表示</span></p>
+
+            <div class="intro-container-left-who-window"></div>
+
+
+            <p class="intro-who-description" id="intro-each-description">1986年生。北海道釧路市出身。 <br>
+              美術の勉強にカナダに2年間程留学経験あり。</p>
+
+            <p class="intro-design-description" id="intro-each-description">3DCG制作スタジオ勤務経験があるので、<br>
+              Photoshopを使用した業務も可能です。</p>
+
+            <p class="intro-works-description" id="intro-each-description">自動車工場のライン作業等の肉体労働経験あり。 <br> 体力には自信があります。</p>
+
+          </div>
+
+          <div class="intro-container-left-icons">
+
+            <div class="intro-container-left-who" id="intro-container-left-icon-each">
+              <img src="img/intro/mFP_intro_icon01.png" onmouseover="showDescriptionWindow(), showDescriptionWho()"
+                onmouseout="hideDescriptionWindow(), hideDescriptionWho()" alt="who">
+            </div>
+
+            <div class="intro-container-left-icon02" id="intro-container-left-icon-each">
+              <img src="img/intro/mFP_intro_icon02.png" onmouseover="showDescriptionWindow(), showDescriptionDesign()"
+                onmouseout="hideDescriptionWindow(), hideDescriptionDesign()" alt="design">
+            </div>
+
+            <div class="intro-container-left-icon03" id="intro-container-left-icon-each">
+              <img src="img/intro/mFP_intro_icon03.png" onmouseover="showDescriptionWindow(), showDescriptionWorks()"
+                onmouseout="hideDescriptionWindow(), hideDescriptionWorks()" alt="works">
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="intro-container-right">
+          <img class="intro-container-right-base" src="img/intro/mFP_intro_me_base.png" alt="">
+          <div class="intro-container-right-portrait">
+            <img src="img/intro/mFP_intro_me_face.png" alt="">
+          </div>
+          <div class="intro-container-right-paragraph">
+            <p>&nbsp;&nbsp;名前： <br>ShinsakuT <br>（仮名）</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="portfolio">
+
+    <div class="portfolio-header">
+      <p class="portfolio-header-theme">Works</p>
+    </div>
+
+    <div class="portfolio-wrapper">
+
+      <div class="portfolio-paragraph">
+        <img src="img/works/mFP_works_para.png" alt="">
+        <p class="portfolio-paragraph-p">今まで制作した作品になります。<br>クリックで詳細表示します。</p>
+
+      </div>
+
+      <div class="portfolio-content">
+
+        <button id="openModal01" class="portfolio-portfolio">
+          <img class="portfolio-portfolio-image" src="img/works/mFP_works_portfolio.png" alt="portfolio">
+        </button>
+        <button id="openModal02">
+          <img src="img/works/mFP_works_x.png" alt="x">
+        </button>
+        <button id="openModal03">
+          <img src="img/works/mFP_works_x.png" alt="x">
+        </button>
+        <button id="openModal04">
+          <img src="img/works/mFP_works_x.png" alt="x">
+        </button>
+        <button id="openModal05">
+          <img src="img/works/mFP_works_x.png" alt="x">
+        </button>
+        <button id="openModal06">
+          <img src="img/works/mFP_works_x.png" alt="x">
+        </button>
+        <button id="openModal07">
+          <img src="img/works/mFP_works_x.png" alt="x">
+        </button>
+        <button id="openModal08">
+          <img src="img/works/mFP_works_x.png" alt="x">
+        </button>
+        <button id="openModal09">
+          <img src="img/works/mFP_works_x.png" alt="x">
+        </button>
+
+        <!-- modal -->
+
+        <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+        <!-- <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+        <script>//modal01
+
+          $(function () {
+            $('#openModal01').click(function () {
+              $('#modalArea-portfolio').fadeIn();
+            });
+            $('#closeModal , #modalBg').click(function () {
+              $('#modalArea-portfolio').fadeOut();
+            });
+          });
+        </script>
+
+        <script>//modal02
+
+          $(function () {
+            $('#openModal02').click(function () {
+              $('#modalArea').fadeIn();
+            });
+            $('#closeModal , #modalBg').click(function () {
+              $('#modalArea').fadeOut();
+            });
+          });
+        </script>
+        <script>//modal03
+
+          $(function () {
+            $('#openModal03').click(function () {
+              $('#modalArea').fadeIn();
+            });
+            $('#closeModal , #modalBg').click(function () {
+              $('#modalArea').fadeOut();
+            });
+          });
+        </script>
+        <script>//modal04
+
+          $(function () {
+            $('#openModal04').click(function () {
+              $('#modalArea').fadeIn();
+            });
+            $('#closeModal , #modalBg').click(function () {
+              $('#modalArea').fadeOut();
+            });
+          });
+        </script>
+        <script>//modal05
+
+          $(function () {
+            $('#openModal05').click(function () {
+              $('#modalArea').fadeIn();
+            });
+            $('#closeModal , #modalBg').click(function () {
+              $('#modalArea').fadeOut();
+            });
+          });
+        </script>
+        <script>//modal06
+
+          $(function () {
+            $('#openModal06').click(function () {
+              $('#modalArea').fadeIn();
+            });
+            $('#closeModal , #modalBg').click(function () {
+              $('#modalArea').fadeOut();
+            });
+          });
+        </script>
+        <script>//modal07
+
+          $(function () {
+            $('#openModal07').click(function () {
+              $('#modalArea').fadeIn();
+            });
+            $('#closeModal , #modalBg').click(function () {
+              $('#modalArea').fadeOut();
+            });
+          });
+        </script>
+        <script>//modal08
+
+          $(function () {
+            $('#openModal08').click(function () {
+              $('#modalArea').fadeIn();
+            });
+            $('#closeModal , #modalBg').click(function () {
+              $('#modalArea').fadeOut();
+            });
+          });
+        </script>
+        <script>//modal09
+
+          $(function () {
+            $('#openModal09').click(function () {
+              $('#modalArea').fadeIn();
+            });
+            $('#closeModal , #modalBg').click(function () {
+              $('#modalArea').fadeOut();
+            });
+          });
+        </script>
+
+        <!-- modal-portfolio -->
+        <section id="modalArea-portfolio" class="modalArea-portfolio">
+          <div id="modalBg" class="modalBg"></div>
+          <div class="modalWrapper">
+            <div class="modalContents">
+              <h1>ShinsakuT's Portfolio</h1>
+              <div class="thumbnail-wrapper">
+                <div class="thumbnail"></div>
+
+              </div>
+              <p class="work-description">
+                当サイトになります。<br>
+                ページ上部にparallax.js、吹き出しのアニメーションにgreensock、ページ下部Worksの作品紹介用モーダルにjQueryを使用しています。<br>
+                使われている画像はすべて自作となります。<br> 
+                アートワークはアメコミ風作画を参考にしています（
+                <a href="https://voidbastards.com/" target="_blank">Void
+                  Bastards</a> , <a href="http://artofmikemignola.com/" target="_blank">
+                  Hellboy</a>等）。<br> 
+                  <a href="https://github.com/drunkshin/ShinsakuTs-Portfolio" target="_blank">Github</a> </p>
+              <p class="work-usedtool">使用したツール：VS Code, Adobe Photoshop</p>
+            </div>
+            <div id="closeModal" class="closeModal">
+              ×
+            </div>
+          </div>
+        </section>
+
+        <!-- modal-x -->
+        <section id="modalArea" class="modalArea">
+          <div id="modalBg" class="modalBg"></div>
+          <div class="modalWrapper">
+            <div class="modalContents">
+              <h1>製作中</h1>
+              <p>こちらの作品は現在製作中になります。</p>
+            </div>
+            <div id="closeModal" class="closeModal">
+              ×
+            </div>
+          </div>
+        </section>
+
+
+      </div>
+
+    </div>
+
+    <div class="portfolio-background">
+      <img class="portfolio-backgound-floor" src="img/works/mFP_works_floor_grayscale.png" alt="portfolio-background">
+    </div>
+
+  </div>
+
+  <div class="footer">
+
+    <div class="footer-wrapper">
+      <div class="footer-content">
+        <p >Mail: shinshinsakusaku1986@gmail.com</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- scripts -->
+
+  <!-- parallax -->
+  <script src="./js/parallax.js"></script>
+
+  <script type="text/javascript">
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene);
+    var parallaxInstance = new Parallax(scene, {
+      relativeInput: true,
+      hoverOnly: true
+    });
+
+    parallaxInstance.friction(.075, .075);
+    parallaxInstance.origin(.5, .75);
+
+
+  </script>
+
+  <!-- sayingsAnimation -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.2/dist/gsap.min.js"></script>
+  <script src="./js/sayings-animation.js"></script>
+
+  <!-- toggleDescription -->
+  <script src="./js/introToggle.js"></script>
+
+  <!-- scroll to top -->
+  <script src="./js/scrollToTop.js"></script>
+
+</body>
+
+</html>
